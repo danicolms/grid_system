@@ -1,2 +1,1 @@
-# grid_system
-Column grid system.
+# Responsive column grid system for layout
