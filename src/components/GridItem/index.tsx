@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useGridSize, EGridSizes } from "../utils";
 import { SGridItem } from "./styles";
 
-type GridItermSize = {
+export type GridItemSize = {
   start: number;
   end: number;
   row: number;
