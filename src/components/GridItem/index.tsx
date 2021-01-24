@@ -2,45 +2,56 @@ import React, { useState, useEffect } from "react";
 import { useGridSize, EGridSizes } from "../utils";
 import { SGridItem } from "./styles";
 
+type GridItermSize = {
+  start: number;
+  end: number;
+  row: number;
+};
+
 interface GridItemProps {
-  small?: [number, number];
-  medium?: [number, number];
-  large?: [number, number];
+  s?: GridItermSize;
+  m?: GridItermSize;
+  l?: GridItermSize;
 }
+
 const GridItem: React.FunctionComponent<GridItemProps> = ({
   children,
-  small,
-  medium,
-  large,
+  s,
+  m,
+  l,
 }) => {
-  const [start, setStart] = useState<number>(large[0]);
-  const [end, setEnd] = useState<number>(large[1]);
+  const [start, setStart] = useState<number>(l.start);
+  const [end, setEnd] = useState<number>(l.end);
+  const [row, setRow] = useState<number>(l.row);
   const gridSize = useGridSize();
 
   useEffect(() => {
     if (gridSize === EGridSizes.SMALL) {
-      setStart(small[0]);
-      setEnd(small[1]);
+      setStart(s.start);
+      setEnd(s.end);
+      setRow(s.row);
     } else if (gridSize === EGridSizes.MEDIUM) {
-      setStart(medium[0]);
-      setEnd(medium[1]);
+      setStart(m.start);
+      setEnd(m.end);
+      setRow(m.row);
     } else {
-      setStart(large[0]);
-      setEnd(large[1]);
+      setStart(l.start);
+      setEnd(l.end);
+      setRow(l.row);
     }
   }, [gridSize]);
 
   return (
-    <SGridItem start={start} end={end}>
+    <SGridItem start={start} end={end} row={row}>
       {children}
     </SGridItem>
   );
 };
 
 GridItem.defaultProps = {
-  small: [0, 12],
-  medium: [0, 8],
-  large: [0, 4],
+  s: { start: 1, end: 4, row: "auto" },
+  m: { start: 1, end: 8, row: "auto" },
+  l: { start: 1, end: 12, row: "auto" },
 };
 
 export default GridItem;

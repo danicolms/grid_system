@@ -24,8 +24,8 @@ export const SGrid = styled.div`
   display: grid;
   height: 100%;
   grid-auto-rows: max-content;
-  column-gap: ${(props: SGridProps) => `${props.gutterSize}px`};
-  grid-template-columns: ${(props: SGridProps) =>
-    `repeat(${getColumnNumberBySize(props.size)}, 1fr)`};
-  margin: ${(props: SGridProps) => `0px ${props.margin}px`};
+  column-gap: ${({ gutterSize }: SGridProps) => `${gutterSize}px`};
+  grid-template-columns: ${({ size }: SGridProps) =>
+    `repeat(${getColumnNumberBySize(size)}, 1fr)`};
+  margin: ${({ margin }: SGridProps) => `0px ${margin}px`};
 `;

@@ -8,20 +8,19 @@ class App extends React.Component {
   render() {
     return (
       <Grid>
-        <GridItem large={[3, 10]}>
-          <div style={{ background: "red", height: 100 }}></div>
+        <GridItem
+          l={{ start: 1, end: 5, row: 1 }}
+          m={{ start: 1, end: 8, row: 2 }}
+          s={{ start: 2, end: 4, row: 2 }}
+        >
+          <div style={{ background: "red", height: 500 }}></div>
         </GridItem>
-        <GridItem large={[3, 6]}>
-          <div style={{ background: "yellow", height: 100 }}></div>
-        </GridItem>
-        <GridItem large={[7, 10]}>
-          <div style={{ background: "green", height: 100 }}></div>
-        </GridItem>
-        <GridItem large={[1, 12]}>
-          <div style={{ background: "black", height: 400 }}></div>
-        </GridItem>
-        <GridItem large={[7, 10]}>
-          <div style={{ background: "blue", height: 100 }}></div>
+        <GridItem
+          l={{ start: 6, end: 12, row: 1 }}
+          m={{ start: 1, end: 8, row: 1 }}
+          s={{ start: 1, end: 4, row: 1 }}
+        >
+          <div style={{ background: "blue", height: 500 }}></div>
         </GridItem>
       </Grid>
     );
