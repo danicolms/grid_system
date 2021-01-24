@@ -5,13 +5,13 @@ import { SGridItem } from "./styles";
 export type GridItemSize = {
   start: number;
   end: number;
-  row: number;
+  row: number | string;
 };
 
 interface GridItemProps {
-  s?: GridItermSize;
-  m?: GridItermSize;
-  l?: GridItermSize;
+  s?: GridItemSize;
+  m?: GridItemSize;
+  l?: GridItemSize;
 }
 
 const GridItem: React.FunctionComponent<GridItemProps> = ({

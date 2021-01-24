@@ -1,6 +1,7 @@
 import * as React from "react";
 import { render } from "react-dom";
-import { GridItem, Grid, GridItemSize } from "./components";
+
+import { GridItem, Grid, GridItemSize } from "@danicolms/grid_system";
 import "./styles.css";
 
 class App extends React.Component {

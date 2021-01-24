@@ -3,8 +3,8 @@ import { SGrid } from "./styles";
 import { useGridSize, EGridSizes } from "../utils";
 
 interface GridProps {
-  margins: [number, number, number];
-  gutterSizes: [number, number, number];
+  margins?: [number, number, number];
+  gutterSizes?: [number, number, number];
 }
 
 const Grid: React.FunctionComponent<GridProps> = ({
