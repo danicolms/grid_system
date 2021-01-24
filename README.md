@@ -80,9 +80,9 @@ We defined a grid structure with default values and two items: a **blue** and a 
     </Grid>
 
 The result of this placement will be something like this:
-![Large screen](https://ibb.co/r3MFWZT)
-![Medium screen](https://ibb.co/80c73bs)
-![Small screen](https://ibb.co/0Bcrx0K)
+![Large screen](https://i.ibb.co/qC97ZRX/L.png)
+![Medium screen](https://i.ibb.co/2yNk2Sh/M.png)
+![Small screen](https://i.ibb.co/DGtQZBY/S.png)
 
 ----
 @danicolms
