@@ -80,6 +80,7 @@ We defined a grid structure with default values and two items: a **blue** and a 
     </Grid>
 
 The result of this placement will be something like this:
+\
 On a desktop screen:  \
 ![Large screen](https://i.ibb.co/qC97ZRX/L.png)
 
