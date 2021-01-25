@@ -80,17 +80,17 @@ We defined a grid structure with default values and two items: a **blue** and a 
     </Grid>
 
 The result of this placement will be something like this:
-
+On a desktop screen: \s\s
 ![Large screen](https://i.ibb.co/qC97ZRX/L.png)
-On a desktop screen
+
 -----------
-
+On a tablet screen: \s\s
 ![Medium screen](https://i.ibb.co/2yNk2Sh/M.png)
-On a tablet screen
-------------
 
+------------
+On a phone screen: \s\s
 ![Small screen](https://i.ibb.co/DGtQZBY/S.png)
-On a phone screen
+
 
 ----
 @danicolms
